@@ -6,21 +6,16 @@
 
 html, body {
     height: 100vh;
-    width: 100vw;
+}
 
+body {
+    background: url(../imagens/fundo-madeira.jpg) center center / cover no-repeat;
 }
 
 main {
     height: 100vh;
     position: relative;
-     
-}
-
-body {
-    background: url(../imagens/fundo-madeira.jpg) center center;
-    background-size: cover;
-    background-attachment: fixed;
-}
+    }
 
 section#telefone {
     height: 627px;
@@ -33,21 +28,29 @@ section#telefone {
 
 }
 
-section#redes-sociais {
-    height: 500px;
-    width: 100px;
-    background: red ;
-    position: absolute;
-    right: 2%;
-    top: 50%;
-    transform: translate(-2%, -50%) ;
-    background: blue no-repeat cover /fixed;
-}
-
 iframe#home {
     position: relative;
     top: 80.5px;
     left: 23px;
     width: 266px;
     height: 470px;
+}
+
+section#redes-sociais {
+    padding-top: 140px;
+    text-align: right;
+    }
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.516);
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid white;
+    transform: translate(-5%, -5%);
+    transition: transform 0.3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);
 }
